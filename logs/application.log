@@ -1,0 +1,20 @@
+2024-04-19 13:23:13,489 INFO c.b.c.CursosApplication [main] Starting CursosApplication using Java 17.0.10 with PID 21616 (C:\Users\carlos.arjona\IdeaProjects\Cursos\target\classes started by carlos.arjona in C:\Users\carlos.arjona\IdeaProjects\Cursos)
+2024-04-19 13:23:13,497 INFO c.b.c.CursosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-04-19 13:23:14,187 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-04-19 13:23:14,196 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-19 13:23:14,198 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-04-19 13:23:14,207 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-19 13:23:14,249 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-04-19 13:23:14,249 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 716 ms
+2024-04-19 13:23:14,566 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-19 13:23:14,580 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-04-19 13:23:14,588 INFO c.b.c.CursosApplication [main] Started CursosApplication in 1.449 seconds (process running for 2.218)
+2024-04-19 13:23:28,312 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-19 13:23:28,312 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-04-19 13:23:28,314 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2024-04-19 13:23:30,108 INFO c.b.c.s.GradesService [http-nio-8080-exec-3] LLAMADA A RECIBIR LISTA CURSOS
+2024-04-19 13:23:38,497 INFO c.b.c.s.GradesService [http-nio-8080-exec-4] LLAMADA A INTRODUCIR ALUMNO: 
+DNI: 48088640X Nombre: Pepe
+2024-04-19 13:23:42,863 INFO c.b.c.s.GradesService [http-nio-8080-exec-5] LLAMADA A RECIBIR EL CURSO:  
+ID: 2 Nombre: Front End Angular
+2024-04-19 13:23:42,866 DEBUG c.b.c.s.GradesService [http-nio-8080-exec-5] Lista alumnos: [1 Pepe Juan 48088640X]
