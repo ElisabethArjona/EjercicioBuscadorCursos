@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class GradeListDTO {
     private int id;
-    private String nombre;
+    private String name;
     private String area;
-    private int numHoras;
+    private int numHours;
     private Modality modality;
-    private double precio;
+    private double price;
 
 }

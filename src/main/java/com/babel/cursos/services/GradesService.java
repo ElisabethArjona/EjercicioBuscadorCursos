@@ -5,10 +5,12 @@ import com.babel.cursos.models.GradeListDTO;
 import com.babel.cursos.models.Modality;
 import com.babel.cursos.models.Student;
 import com.babel.cursos.repository.IGradesDB;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class GradesService implements IGradesService {
 
     private final IGradesDB gradesDB;
@@ -30,10 +32,10 @@ public class GradesService implements IGradesService {
         for (Grade grade: listGrades){
             GradeListDTO gradeListDTO = new GradeListDTO();
             gradeListDTO.setId(grade.getId());
-            gradeListDTO.setNombre(grade.getName());
+            gradeListDTO.setName(grade.getName());
             gradeListDTO.setArea(grade.getArea());
-            gradeListDTO.setPrecio(grade.getPrice());
-            gradeListDTO.setNumHoras(grade.getNumHours());
+            gradeListDTO.setPrice(grade.getPrice());
+            gradeListDTO.setNumHours(grade.getNumHours());
             gradeListDTO.setModality(grade.getModality());
             listGradesDTO.add(gradeListDTO);
         }
