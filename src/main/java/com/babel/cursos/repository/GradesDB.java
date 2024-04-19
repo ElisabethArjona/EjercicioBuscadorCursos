@@ -16,7 +16,7 @@ public class GradesDB implements IGradesDB {
     @Override
     public void initDB() {
         ArrayList<Teacher> teachers = new ArrayList<>();
-        teachers.add(new Teacher("Elisabeth","Arjona","linkedin.com"))
+        teachers.add(new Teacher("Elisabeth","Arjona","linkedin.com"));
         Grade grade1 = new Grade("Back End Spring","Spain",120, Modality.ONLINE,180.50,null,true,"Barcelona","Rambla 200",teachers,null,null,new HashSet<>());
         Grade grade2 = new Grade("Front End Angular","Spain",200, Modality.PRESENCIAL,200,null,true,"Malaga","Carlos Haya 150",teachers,null,null,new HashSet<>());
         Grade grade3 = new Grade("Mokito","Spain",25, Modality.PRESENCIAL,25.80,null,false,"Madrid","Gran Vía 80",teachers,null,null,new HashSet<>());
