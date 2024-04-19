@@ -13,6 +13,6 @@ public interface IGradesDB {
 
     Grade getGrade(int id);
 
-    void addStudent(int id,Student student);
+    boolean addStudent(int id,Student student);
 
 }

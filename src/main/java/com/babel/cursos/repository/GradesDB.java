@@ -39,9 +39,9 @@ public class GradesDB implements IGradesDB {
     }
 
     @Override
-    public void addStudent(int id,Student student) {
+    public boolean addStudent(int id,Student student) {
         Grade grade = gradesList.get(id);
-        grade.addStudent(student);
+        return grade.addStudent(student);
     }
 
 }
