@@ -69,11 +69,16 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return id == student.id && Objects.equals(dni, student.dni);
+        return dni.equalsIgnoreCase(student.dni);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, dni);
+        return Objects.hash(dni);
+    }
+
+    @Override
+    public String toString() {
+        return id+" " + name + " " + lastName + " " + dni;
     }
 }

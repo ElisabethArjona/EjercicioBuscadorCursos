@@ -23,6 +23,10 @@ public class GradeOnlineDTO extends Grade {
     private Date enrollmentPeriod;
     private Boolean certification;
     private List<Teacher> teachers;
+    @JsonIgnore
+    private String location;
+    @JsonIgnore
+    private String address;
     private Date startDate;
     private Date endDate;
     @JsonIgnore
@@ -160,5 +164,25 @@ public class GradeOnlineDTO extends Grade {
     @Override
     public void setStudents(Set<Student> students) {
         this.students = students;
+    }
+
+    @Override
+    public String getLocation() {
+        return location;
+    }
+
+    @Override
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    @Override
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
